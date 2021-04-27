@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cronômetro JS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+  <script>document.documentElement.className += ' js'</script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .cronometro {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .cronometro h1 {
+      font-size: 3rem;
+    }
+
+    .cronometro p {
+      font-size: 2.5rem;
+      margin: 40px 0;
+    }
+
+    .cronometro p span {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .botoes button {
+      padding: 10px 20px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cronometro">
+    <h1>Cronômetro</h1>
+    <p><span data-tempo="horas">00</span>:<span data-tempo="minutos">00</span>:<span data-tempo="segundos">00</span></p>
+    <div class="botoes">
+      <button data-iniciar>Iniciar</button>
+      <button data-pause>Pausar</button>
+      <button data-reset>Reset</button>
+    </div>
+
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
